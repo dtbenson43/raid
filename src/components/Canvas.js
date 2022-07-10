@@ -7,7 +7,7 @@ const Canvas = ({ paperScript, style }) => {
     useEffect(() => {
         const canvas = canvasRef.current;
         paperScript(canvas);
-    }, [paperScript]);
+    });
 
     return <canvas ref={canvasRef} style={style} resize="true" />
 }
